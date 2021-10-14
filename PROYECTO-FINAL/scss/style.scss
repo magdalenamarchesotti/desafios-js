@@ -1,0 +1,330 @@
+@import 'componentes/header';
+@import 'componentes/footer';
+@import 'componentes/secciones';
+@import 'componentes/tienda';
+@import 'componentes/formulario';
+@import 'base/colores';
+@import 'base/fuentes';
+@import 'base/mixins';
+@import 'base/operadores';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@600&family=Permanent+Marker&family=Yanone+Kaffeesatz&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth; 
+    -o-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+}
+
+/* Media query */
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+
+    .header-container {
+        .header {
+            .header-1 {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                    li {
+                        img {
+                        width: 100%;
+                    }
+                    ul {
+                        li {
+                            display: none;
+                        }
+                        &:hover ul {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nueva-coleccion {
+        .nueva-coleccion-div {
+            .nueva-coleccion-div-2 {
+                .ss-21 {
+                    text-align: center;
+                    font-size: nth($fuentes-proyecto, 3);
+                }
+                .ver-coleccion {
+                    text-align: center;
+                    font-size: nth($fuentes-proyecto, 2);
+                }
+            }
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+  .texto-bienvenida {
+    font-size: nth($fuentes-proyecto, 2);
+  }  
+
+    .section-container {
+        .section {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+                .section div {
+                    width: 100%;
+            }
+        }
+    }
+
+#locales {
+    .locales {
+        text-align: center;
+        font-size: nth($fuentes-proyecto, 1);
+    }
+}
+
+    .photo-grid-container {
+        h3 {
+            font-size: nth($fuentes-proyecto, 2);
+        }
+        div {
+            div {
+                div {
+                    .card-container-1 {
+                        @include parametro-flex(flex, space-around);
+                        .card {
+                            width: 12rem;
+                            .card-body {
+                                .card-title {
+                                    font-size: nth($fuentes-proyecto, 6);
+                                }
+                                .btn-primary {
+                                    font-size: nth($fuentes-proyecto, 6);
+                                }
+                            }
+                        }
+                        .tercera-card {
+                            display: none;
+                        }
+                        .cuarta-card {
+                            display: none;
+                        }
+                    }
+                    .card-container-2 {
+                        @include parametro-flex(flex, space-around);
+                        .card {
+                            width: 12rem;
+                            .card-body {
+                                .card-title {
+                                    font-size: nth($fuentes-proyecto, 6);
+                                }
+                                .btn-primary {
+                                    font-size: nth($fuentes-proyecto, 6);
+                                }
+                            }
+                        }
+                        .septima-card {
+                            display: none;
+                        }
+                        .octava-card {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .photo-grid-container-2 {
+        .tienda-2 {
+            text-align: center;
+            font-size: nth($fuentes-proyecto, 2);
+        }
+        .card-container {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(12,auto);
+            grid-template-areas: 
+            "photo-1"
+            "photo-2"
+            "photo-3"
+            "photo-4"
+            "photo-5"
+            "photo-6"
+            "photo-7"
+            "photo-8"
+            "photo-9"
+            "photo-10"
+            "photo-11"
+            "photo-12";
+        }
+    }
+
+    .footer-container-2 {
+        .footer-menu {
+            width: 100%;
+            flex-wrap: wrap;
+                .div-footer {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    
+    .header-container {
+        .header {
+            .header-1 {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                    li {
+                        img {
+                        width: 100%;
+                    }
+                    ul {
+                        li {
+                            display: none;
+                        }
+                        &:hover ul {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nueva-coleccion {
+        .nueva-coleccion-div {
+            .nueva-coleccion-div-2 {
+                .ss-21 {
+                    text-align: center;
+                    font-size: nth($fuentes-proyecto, 3);
+                }
+                .ver-coleccion {
+                    text-align: center;
+                    font-size: nth($fuentes-proyecto, 2);
+                }
+            }
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .texto-bienvenida {
+        font-size: nth($fuentes-proyecto, 2);
+    }
+
+    .section-container {
+        .section {
+            .condiciones {
+                .condiciones-titulo {
+                    text-align: center;
+                    font-size: nth($fuentes-proyecto, 6);
+                }
+            }
+        }
+    }
+
+    .photo-grid-container {
+        h3 {
+            font-size: nth($fuentes-proyecto, 3);    
+        }
+        div {
+            div {
+                div {
+                    .card-container-1 {
+                        @include parametro-flex(flex, space-around);
+                        .card {
+                            width: 12rem;
+                            .card-body {
+                                .card-title {
+                                    font-size: nth($fuentes-proyecto, 6);
+                                }
+                                .btn-primary {
+                                    font-size: nth($fuentes-proyecto, 6);
+                                }
+                            }
+                        }
+                        .cuarta-card {
+                            display: none;
+                        }
+                    }
+                    .card-container-2 {
+                        @include parametro-flex(flex, space-around);
+                        .card {
+                            width: 12rem;
+                            .card-body {
+                                .card-title {
+                                    font-size: nth($fuentes-proyecto, 6);
+                                }
+                                .btn-primary {
+                                    font-size: nth($fuentes-proyecto, 6);
+                                }
+                            }
+                        }
+                        .octava-card {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .photo-grid-container-2 {
+        .card-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(6,auto);
+            grid-template-areas:
+            "photo-1 photo-2"
+            "photo-3 photo-4"
+            "photo-5 photo-6"
+            "photo-7 photo-8"
+            "photo-9 photo-10"
+            "photo-11 photo-12";
+        }
+    }
+}
+
+#locales {
+    h3 {
+        font-size: nth($fuentes-proyecto, 2);
+    }
+}
+
+.seguinos {
+    font-size: nth($fuentes-proyecto, 2);
+}
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+    
+    .photo-grid-container-2 {
+        .card-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-areas: 
+            "photo-1 photo-2 photo-3"
+            "photo-4 photo-5 photo-6"
+            "photo-7 photo-8 photo-9"
+            "photo-10 photo-11 photo-12";
+        }
+    }
+}
+

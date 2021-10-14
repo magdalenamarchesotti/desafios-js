@@ -1,0 +1,139 @@
+@import '../base/mixins';
+@import '../base/colores';
+@import '../base/fuentes';
+@import '../base/operadores';
+
+.photo-grid-container-2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    "titulo"
+    "galeria";
+    justify-items: center;
+
+    .tienda-2 {
+        color: nth($colores-proyecto, 4);
+        font-size: nth($fuentes-proyecto, 3);
+        letter-spacing: 5px;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        grid-area: titulo;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-area: galeria;
+        grid-template-areas: 
+        "photo-1 photo-2 photo-3"
+        "photo-4 photo-5 photo-6"
+        "photo-7 photo-8 photo-9"
+        "photo-10 photo-11 photo-12";
+        justify-items: center;
+        width: 100%;
+
+        .card {
+            margin-bottom: 20px;
+            margin-top: 20px;
+
+            .card-img-top {
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.5;
+                }
+            }
+        
+            .card-body {
+                .card-title {
+                    text-align: center;
+                    font-size: nth($fuentes-proyecto, 3);
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                }
+
+                .card-text {
+                    text-align: center;
+                    font-size: nth($fuentes-proyecto, 2);
+                    font-family: 'Poppins', sans-serif;
+                }
+
+                .btn-primary {
+                    @include parametro-flex (flex, center);
+                    background-color:nth($colores-proyecto, 1);
+                    border-color:nth($colores-proyecto, 1);
+
+                    &:hover {
+                        background-color: nth($colores-proyecto, 5);
+                        border-color:nth($colores-proyecto, 5);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        
+        .photo-1 {
+            grid-area: photo-1;
+        }
+        
+        .photo-2 {
+            grid-area: photo-2;
+        }
+        
+        .photo-3 {
+            grid-area: photo-3;
+        }
+        
+        .photo-4 {
+            grid-area: photo-4;
+        }
+        
+        .photo-5 {
+            grid-area: photo-5;
+        }
+        
+        .photo-6 {
+            grid-area: photo-6;
+        }
+        
+        .photo-7 {
+            grid-area: photo-7;
+        }
+        
+        .photo-8 {
+            grid-area: photo-8;
+        }
+        
+        .photo-9 {
+            grid-area: photo-9;
+        }   
+
+        .photo-10 {
+            grid-area: photo-10;
+        }
+
+        .photo-11 {
+            grid-area: photo-11;
+        }
+
+        .photo-12 {
+            grid-area: photo-12;
+        }
+    }
+}
+
+
+
+
+
+
+

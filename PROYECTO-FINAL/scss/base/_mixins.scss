@@ -1,0 +1,10 @@
+@mixin parametro-flex($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
+
+@mixin parametro-flex-completo($width, $display, $justify) {
+    width: $width;
+    display: $display;
+    justify-content: $justify;
+}

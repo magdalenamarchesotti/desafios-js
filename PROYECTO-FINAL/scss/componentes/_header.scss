@@ -1,0 +1,66 @@
+@import '../base/mixins';
+@import '../base/colores';
+@import '../base/fuentes';
+@import '../base/operadores';
+
+.header-container {
+    @include parametro-flex(flex, space-evenly);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1999;
+
+    .header {
+        @include parametro-flex-completo(100%, flex, space-evenly);
+
+        .header-1 {
+            @include parametro-flex-completo(100%, flex, space-evenly);
+            list-style: none;
+            align-items: center;
+            padding-left: 0;
+
+            li {
+                position: relative;
+                img {
+                width: $ancho - 30%;
+                }    
+                a {  
+                    color: nth($colores-proyecto, 1);
+                    letter-spacing: 2px;
+                    font-size: nth($fuentes-proyecto, 3);
+                    font-family: 'Poppins', sans-serif;
+                    text-decoration: none;
+
+                    &:hover {
+                    text-decoration: none;
+                    border-bottom: 3px solid rgb(251,70, 244); 
+                    color: nth($colores-proyecto, 5);
+                    }
+                }
+
+                ul {
+                    position: absolute;
+                    display: none;
+                    padding-left: 0;
+                    margin-top: 2px;
+                    li {
+                        display: block;
+                        position: relative;
+                        background-color: nth($colores-proyecto, 3);
+                        text-align: center;
+                        a {
+                            font-size: nth($fuentes-proyecto, 6);
+                            &:hover {
+                                color: nth($colores-proyecto, 5);
+                                border-bottom: 1px solid rgb(251,70, 244);
+                            }
+                        }
+                    }
+                }
+                    &:hover ul {
+                        display: block;
+                    } 
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@import '../base/mixins';
+@import '../base/colores';
+@import '../base/fuentes';
+@import '../base/operadores';
+
+.form-presupuesto {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    @include parametro-flex (flex, center);
+    form {
+        width: 40%;
+        div {
+            .form-label-presup {
+                color: nth($colores-proyecto, 1);
+                font-size: nth($fuentes-proyecto, 1);
+                letter-spacing: 1px;
+                font-family: 'Poppins', sans-serif;
+            }
+            .form-control {
+                font-size: nth($fuentes-proyecto, 6);
+                letter-spacing: 1px;
+                font-family: 'Poppins', sans-serif;
+            }
+            .form-mensaje {
+                color: #6E757C;
+                font-size: nth($fuentes-proyecto, 6);
+                letter-spacing: 1px;
+                font-family: 'Poppins', sans-serif;
+                margin-left: 12px;
+            }
+        }
+        .btn-enviar {
+            display: flex;
+            justify-content: flex-end;
+            .btn-presup {
+                color: nth($colores-proyecto, 3);
+                font-size: nth($fuentes-proyecto, 2);
+                font-family: 'Poppins', sans-serif;
+                background-color: nth($colores-proyecto, 1);
+                border-color: nth($colores-proyecto, 1);
+                padding: 10px 20px 10px 20px;
+                &:hover {
+                    background-color: nth($colores-proyecto, 5);
+                    border-color: nth($colores-proyecto, 5);
+                }
+            }
+        }
+    }
+}
+
+.mensaje-volver {
+    color: nth($colores-proyecto, 1);
+    font-size: nth($fuentes-proyecto, 2);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    &:hover {
+        color: nth($colores-proyecto, 5);
+    }
+}
