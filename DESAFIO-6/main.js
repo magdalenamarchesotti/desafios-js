@@ -29,16 +29,16 @@ class Producto {
     const producto4 = new Producto("remera", "slimfit", "1200");
     productos.push(producto4);
 
-    for (const producto of productos)
-    producto.sumarIva();
+    for (const producto of productos) {
+        producto.sumarIva();
+        producto.vender();
+    }
 
     console.log(productos);
     
 
     // DESAFIO COMPLEMENTARIO
-    const numeros = [18, 50, 45, 60, 12, 78, 67, 31];
     const nombres = ["Jimena", "Pablo", "Luciano", "Camila"];
 
-    console.log(numeros.sort());
     console.log(nombres.sort());
         
