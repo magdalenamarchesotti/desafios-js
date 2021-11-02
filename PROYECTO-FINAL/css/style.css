@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@600&family=Permanent+Marker&family=Yanone+Kaffeesatz&display=swap");
+body div {
+  display: flex;
+  justify-content: flex-end;
+}
+body div i {
+  color: #a1a1a1;
+  font-size: 24px;
+}
+
 .header-container {
   display: flex;
   justify-content: space-evenly;

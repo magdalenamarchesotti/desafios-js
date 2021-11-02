@@ -3,6 +3,16 @@
 @import '../base/fuentes';
 @import '../base/operadores';
 
+body {
+    div {
+        display: flex;
+        justify-content: flex-end;
+        i {
+            color: nth($colores-proyecto, 4);
+            font-size: 24px;
+        }
+    }
+}
 .header-container {
     @include parametro-flex(flex, space-evenly);
     position: sticky;
