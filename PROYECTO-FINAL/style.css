@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contenedor-cards {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(3,auto);
+        grid-gap: 20px;
+        grid-row: 20px;
+        width: 100%;
+    }
+
+    .cards-producto {
+        margin: 20px 40px 20px 40px;
+    }
+
+.titulo-producto {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.precio-producto, .stock-producto {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+
+.stock-producto {
+    margin-bottom: 30px;
+}
+
+.boton-carrito {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background-color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+i {
+    font-size: 30px;
+    color: grey;
+}
+
+.contenedor-basket {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 0 0;
+}
+
+.foto-producto {
+    width: 100%;
+}
+
+
