@@ -8,20 +8,24 @@
     <title>Choose your colour!</title>
 </head>
 <body>
-    <div class="container mt-3 text-center">
-        <label for="inputColour" class="form-label">Color picker</label>
-        <input type="color" class="form-control form-control-color w-100" 
-        id="inputColour" value="#563d7c" title="Choose your color">
-        
-        <div class="mt-3">
-            <button class="btn btn-primary w-100" id="btnView" style="background-color: black;">View</button>
+    <div class="container mt-5">
+        <div class="mt-3 text-center row justify-content-center">
+            <div class="col-12 col-md-6">
+                <label for="inputColour" class="form-label">Color picker</label>
+            <input type="color" class="form-control form-control-color w-100" 
+            id="inputColour" value="#563d7c" title="Choose your color">
             
-            <p class="lead mt-3" id="parrafoHexa">#563d7c</p>
-            
-            <div class="card p-5" id="cardColour" style="background-color: #563d7c;"></div>
+                <div class="mt-3">
+                    <button class="btn btn-primary w-100" id="btnView" style="background-color: black;">View</button>
+                
+                    <p class="lead mt-3" id="parrafoHexa">#563d7c</p>
+                
+                    <div class="card p-5" id="cardColour" style="background-color: #563d7c;"></div>
+                </div>
+            </div>
         </div>
-
     </div>
+
 
     <script src="app.js"></script>
 </body>
