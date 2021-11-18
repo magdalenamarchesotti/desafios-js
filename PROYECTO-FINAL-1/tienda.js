@@ -25,8 +25,8 @@ for (let i = 0; i < productos.length; i++) {
     contenedorCards.appendChild(cardsProducto);
  }
 
- let botonCarrito = document.getElementsByClassName('.boton-carrito'); 
- let fraseCarrito = document.getElementsByClassName('.boton-frase');                                          
+ let botonCarrito = document.getElementsByClassName('boton-carrito'); 
+ let fraseCarrito = document.getElementsByClassName('boton-frase');                                          
 
  for (let i = 0; i < botonCarrito.length; i++) {
 
